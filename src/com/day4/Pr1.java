@@ -4,14 +4,19 @@ public class Pr1 {
 	public static void main(String[] args) {
 		/*
 		 * 1. (1)+(1+2)+(1+2+3)+...+(1+2+3+...+10)
-		결과 : 22
-		 */
-		int i,j = 0;
+		결과 : 220
 		
-		for(i=1; i<=10; i++) {
-			for(j=1; j<=i; j++) {
-			}
+		 */
+		
+		int n=0,s1=0,s2=0;
+		
+		while(n<10) {
+			n++;
+			s1+=n;
+			s2+=s1;
 		}
-		System.out.printf("결과 : %d",i+j);
+			
+		System.out.println("결과 : " + s2);
+		
 	}
 }

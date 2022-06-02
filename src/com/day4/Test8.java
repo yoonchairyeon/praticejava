@@ -20,27 +20,25 @@ public class Test8 {
 		System.out.print("연산자[+,-,*,/]? ");//+
 		oper = (char)System.in.read();
 		
+		int result = 0;
+		
 		switch(oper) {
 		case '+':
-			//System.out.println(num1 + " + " + num2 + " = " +(num1+num2));
-			System.out.printf("%d %c %d = %d", num1,oper,num2,(num1+num2));
+			result = num1 + num2;
 			break;
 		case '-':
-			//System.out.println(num1 + " - " + num2 + " = " +(num1-num2));
-			System.out.printf("%d %c %d = %d", num1,oper,num2,(num1-num2));
+			result = num1 - num2;
 			break;
 		case '*':
-			//System.out.println(num1 + " * " + num2 + " = " +(num1*num2));
-			System.out.printf("%d %c %d = %d", num1,oper,num2,(num1*num2));
+			result = num1 * num2;
 			break;
 		case '/':
-			//System.out.println(num1 + " / " + num2 + " = " +(num1/num2));
-			System.out.printf("%d %c %d = %d", num1,oper,num2,(num1/num2));
+			result = num1 / num2;
 			break;
 		default :
 			System.out.println("연산 불가!!!!");
 		}
-		
+		System.out.printf("%d %c %d = %d", num1,oper,num2,result);
 	}
 
 }
