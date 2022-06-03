@@ -55,8 +55,7 @@ public class Test2 {
 		
 		//System.out.println(week);
 		//			\n = 2바이트 띄어쓰기 하나당 = 1바이트!
-		System.out.println();
-		System.out.println("   일  월   화  수  목   금   토 ");
+		System.out.println("\n   일  월   화  수  목   금   토 ");
 		System.out.println("-----------------------------------");
 		
 		//특정요일부터 시작하도록 공백을 지정한다.

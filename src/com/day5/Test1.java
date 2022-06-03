@@ -7,6 +7,7 @@ public class Test1 {
 	public static void main(String[] args) {
 		//배열 : 같은 형끼리만 가능함. int는 int, float는 float, string은 string!
 		//int[] num = new int[5];
+					//new =복사다.
 		int num[] = new int[5];
 		
 		Scanner sc = new Scanner(System.in);

@@ -5,39 +5,38 @@ import java.util.Scanner;
 public class Pp {
 
 	public static void main(String[] args) {
-		//첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] num = new int[n];
 		
-		int[] num = new int[9];
-		
-		for(int i=0; i<9; i++) {
+		System.out.print(n +"개의 데이터 입력! ");
+		for(int i=0; i<n; i++) {
 			num[i] = sc.nextInt();
 		}
-		int count =0, max = 0, index=0;
+		int i,j,temp;
 		
-		for(int value : num){
-			count ++;
-			if(value > max) {
-				max = value;
-				index = count;
+		System.out.print("Source Data: ");
+		for(i=0; i<num.length; i++) {
+			System.out.printf("%3d",num[i]);
+		}
+		System.out.println();
+		
+		
+		for(i =0; i < num.length -1; i++) {
+			for(j=i+1; j<num.length; j++) {
+				//System.out.println(i + ":" + j);
+				if(num[i]>num[j]) {
+					temp = num[i];
+					num[i] = num[j];
+					num[j] = temp;
+				}
 			}
 		}
-		System.out.println(max + "\n" + index);
+		
+		for(i=0; i<num.length; i++) {
+			System.out.printf("%3d",num[i]);
+		}
 	
 	}
 }
-
-/*
- * 9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 
- * 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
-
-예를 들어, 서로 다른 9개의 자연수
-
-3, 29, 38, 12, 57, 74, 40, 85, 61
-
-이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
-
-첫째 줄부터 아홉 번째 줄까지 한 줄에 하나의 자연수가 주어진다. 
-주어지는 자연수는 100 보다 작다.
-첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
- */
+//정수를 입력받으면 각가 쪼개기...

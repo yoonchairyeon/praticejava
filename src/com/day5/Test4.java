@@ -47,7 +47,9 @@ public class Test4 {
 			System.out.printf("%3d",num[i]);
 		}
 		 */
-		for(int su : num) { //확장 for문! 알아서 배열의 크기만큼 꺼내줌! 배열일 때만 사용함!
+		for(int su : num) { 
+			//확장 for문 : 알아서 배열의 크기만큼 꺼내줌! 배열일 때만 사용함!
+			//(for each문 : 자바스크립트등 다른 언어(c언어, c#등 제외하고!)에서 each가 나오면 반복문!)!
 			System.out.printf("%3d",su);
 		}
 		System.out.println();
