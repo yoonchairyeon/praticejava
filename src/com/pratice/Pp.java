@@ -6,37 +6,23 @@ public class Pp {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int[] num = new int[n];
 		
-		System.out.print(n +"개의 데이터 입력! ");
-		for(int i=0; i<n; i++) {
-			num[i] = sc.nextInt();
+		int N = sc.nextInt();
+		int a[] = new int[N];
+		for(int i=0; i<N; i++) {
+			a[i] = sc.nextInt();
 		}
-		int i,j,temp;
 		
-		System.out.print("Source Data: ");
-		for(i=0; i<num.length; i++) {
-			System.out.printf("%3d",num[i]);
-		}
-		System.out.println();
+		float M = 0,avg=0;
 		
-		
-		for(i =0; i < num.length -1; i++) {
-			for(j=i+1; j<num.length; j++) {
-				//System.out.println(i + ":" + j);
-				if(num[i]>num[j]) {
-					temp = num[i];
-					num[i] = num[j];
-					num[j] = temp;
-				}
+		for(int value : a){
+			if(value > M) {
+				M = value;
 			}
 		}
-		
-		for(i=0; i<num.length; i++) {
-			System.out.printf("%3d",num[i]);
-		}
-	
+		for(int i=0; i<a.length; i++){
+			avg += (a[i]/M*100)/N;
+		}	
+		System.out.println(avg);
 	}
 }
-//정수를 입력받으면 각가 쪼개기...

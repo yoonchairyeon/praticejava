@@ -40,16 +40,6 @@ public class Test2 {
 		for(int su : num) {
 			System.out.printf("%4d",su);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
 	}
 
