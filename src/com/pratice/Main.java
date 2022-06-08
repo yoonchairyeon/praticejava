@@ -1,11 +1,21 @@
 package com.pratice;
 
-import java.util.Scanner;
+import java.util.Random;
 
-public class Pp {
+
+public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Random rd = new Random();
+
+		int num = rd.nextInt(10000)+1;
+		
+		System.out.println(num);
+	}
+}
+
+
+/*Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
 		int a[] = new int[N];
@@ -23,6 +33,4 @@ public class Pp {
 		for(int i=0; i<a.length; i++){
 			avg += (a[i]/M*100)/N;
 		}	
-		System.out.println(avg);
-	}
-}
+		System.out.println(avg);*/
