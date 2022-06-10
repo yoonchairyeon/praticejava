@@ -37,7 +37,7 @@ public class Score {
 	}
 	
 	//수우미양가구하기.
-	public void songjuck() {
+	/* public void songjuck() {
 		for(int i =0; i<inwon; i++) {
 			for(int j=0; j<3; j++) {
 				if(rec[i].score[j] >= 90) {
@@ -55,15 +55,33 @@ public class Score {
 			}
 			
 		}
+	}*/
+	
+	private String panjung(int jumsu) {
+		String pan;
+		switch(jumsu/10) {
+		case 10:
+		case 9:
+			pan = "수"; break;
+		case 8:
+			pan = "우"; break;
+		case 7:
+			pan = "미"; break;
+		case 6:
+			pan = "양"; break;	
+		default:
+			pan = "가"; break;
+		}
+		return pan;
 	}
 	
 	//출력하기.
 	public void print() {
-		System.out.println("   이름   국어     영어     수학    총합    평균!");
+		System.out.println("   이름   국어    영어    수학    총합    평균!");
 		for(int i=0; i<inwon; i++) {
 			System.out.printf("%5s", rec[i].name);
 			for(int j=0; j<3; j++) {
-				System.out.printf("%4d(%s)", rec[i].score[j],rec[i].pan[j]);
+				System.out.printf("%4d(%s)", rec[i].score[j],panjung(rec[i].score[j]));//rec[i].pan[j]
 			}
 			
 			System.out.printf("%6d", rec[i].tot);

@@ -8,7 +8,7 @@ public class ScoreRecordMain {
 		
 		ob.set();
 		ob.input();
-		ob.songjuck();
+		//ob.songjuck();
 		ob.print();
 
 	}
