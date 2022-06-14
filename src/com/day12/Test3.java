@@ -19,7 +19,6 @@ public class Test3 {
 		String[] weeks = {"일","월","화","수","목","금","토"};
 		
 		int y,m,d,w,week;
-		w = cal.get(Calendar.DAY_OF_WEEK);
 		
 		do {
 			System.out.print("년도? ");
@@ -39,11 +38,16 @@ public class Test3 {
 		
 		System.out.print("며칠 후? ");
 		week = sc.nextInt();
-		
+		cal.set(y,m-1, d);
+		w = cal.get(Calendar.DAY_OF_WEEK);
 		
 		System.out.println("만난 날 : "+ y + "년 " + m + "월 " + d + "일 " + weeks[w-1] + "요일 ");
 		
-		cal.set(y,m-1, d);
+		cal.add(Calendar.DATE, week);
+		y = cal.get(Calendar.YEAR);
+		m = cal.get(Calendar.MONTH)+1; 
+		d = cal.get(Calendar.DATE);
+		w = cal.get(Calendar.DAY_OF_WEEK);
 		System.out.println(week+ "일 후 : "+ y + "년 " + m + "월 " + d + "일 " + weeks[w-1] + "요일 ");
 	
 	}
