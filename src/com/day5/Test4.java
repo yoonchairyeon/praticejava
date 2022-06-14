@@ -30,6 +30,7 @@ public class Test4 {
 		}
 		System.out.println();
 		
+		//selection sort
 		for(i =0; i < num.length -1; i++) {
 			for(j=i+1; j<num.length; j++) {
 				//System.out.println(i + ":" + j);
