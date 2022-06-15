@@ -30,16 +30,17 @@ public class Test2 {
 		
 		//출력
 		
-		int lastDay = cal.getActualMaximum(Calendar.DATE);
 		
-		System.out.printf("-----------%d년 %d월---------------",y,m);
+		
+		System.out.printf("-----------%d년 %d월----------------",y,m);
 		System.out.println("\n   일    월    화    수    목   금   토 ");
+		System.out.println("------------------------------------");
 		
 		for(i=1; i<week; i++) {
 			System.out.print("     ");
 		}
 		
-		for(i=1; i<=lastDay; i++) {
+		for(i=1; i<=cal.getActualMaximum(Calendar.DATE); i++) {
 			System.out.printf("%5d", i);
 			
 			week++;
@@ -51,7 +52,7 @@ public class Test2 {
 		if(week %7 !=1) {
 			System.out.println();
 		}
-		
+		System.out.println("------------------------------------");
 		
 	}
 
