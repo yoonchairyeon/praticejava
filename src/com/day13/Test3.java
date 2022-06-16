@@ -77,6 +77,11 @@ public class Test3 {
 		System.out.print("1. orange 2. apple ? ");
 		int n = sc.nextInt();
 		
+		//ItemFruit ob;
+		//ob = new Orange();
+		//ob = new Apple();
+		
+		
 		if(n==1)
 			t.packing(new Orange());
 		else if(n==2)
