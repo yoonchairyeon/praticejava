@@ -1,8 +1,10 @@
 package com.score3;
 
+import java.io.IOException;
+
 public interface Score {
 
-	public int input(); //입력 
+	public int input() throws IOException; //입력 
 	public void print();//출력 
 	public void deleteHak(); //학생정보삭제 
 	public void searchHak(); //학번검색 
