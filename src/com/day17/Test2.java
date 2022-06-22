@@ -10,7 +10,7 @@ class MyThread2 implements Runnable{
 		this.name = name;
 	}
 
-	@Override
+	@Override //지워진다고해서 에러나지 않고 오타를 잡지 않기 위해서 사용 
 	public void run() {
 		int i = 0;
 		while(i<num) {
