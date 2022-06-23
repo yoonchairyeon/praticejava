@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 
 //InputStreamReader 
-//1byte stream을 2byte의 stream으로 변환
+//1byte stream을 2byte의 stream으로 변환 
 //Bridge stream
 //<->
 //OutputStreadWriter

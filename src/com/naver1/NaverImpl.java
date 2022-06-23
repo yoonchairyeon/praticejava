@@ -1,4 +1,4 @@
-package com.naver;
+package com.naver1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

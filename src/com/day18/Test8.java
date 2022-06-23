@@ -19,7 +19,7 @@ public class Test8 {
 		
 		try {
 			
-			FileInputStream fis = new FileInputStream(str1);
+			FileInputStream fis = new FileInputStream(f);
 			FileOutputStream fos = new FileOutputStream(str2);
 
 			int data;

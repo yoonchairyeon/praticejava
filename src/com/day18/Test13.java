@@ -14,6 +14,7 @@ public class Test13 {
 
 	public static void main(String[] args) throws Exception {
 		
+		//map에는 이미 serializable 되어있다. 그러므로 따로 안해줘도 된다.
 		Hashtable<String, String> h = new Hashtable<>();
 		
 		h.put("1", "배수지");

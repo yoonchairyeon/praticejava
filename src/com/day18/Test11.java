@@ -18,7 +18,7 @@ public class Test11 {
 		System.out.println("파일경로 : " + f.getAbsolutePath());
 		System.out.println("표준경로 : " + f.getCanonicalPath());
 		System.out.println("만든날: " + new Date(f.lastModified()));
-		System.out.println("폴도의 경로: " + f.getParent());
+		System.out.println("폴더의 경로: " + f.getParent());
 		System.out.println("읽기 속성: " + f.canRead());
 		System.out.println("쓰기 속성: " + f.canWrite());
 	}
