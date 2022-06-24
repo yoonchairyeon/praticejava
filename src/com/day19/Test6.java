@@ -26,7 +26,7 @@ public class Test6 extends Frame{
 		addMouseListener(new MouseHandler());
 		addMouseMotionListener(new MouseMotionHandler());
 		
-		setBackground(new Color(100,150,150));
+		setBackground(new Color(10,10,200));
 		setForeground(new Color(0,0,0));
 		
 		addWindowListener(new WindowAdapter() {
